@@ -8,7 +8,7 @@ attr_accessor :word
     @word = word 
   end 
 
-  def match(word, array)
+  def match(array)
    answer = [] 
     array.each do |ex|
       answer << ex if word.split('').sort.join == ex.split('').sort.join 
