@@ -7,6 +7,11 @@ class Anagram
   end 
 
   def match(string)
-    string.split(" ").each do |word| 
+   answer = [] 
+    array.each do |ex|
+      answer << ex if word.split('').sort.join == ex.split('').sort.join 
+    end
+    answer  
   end 
+  
 end 
